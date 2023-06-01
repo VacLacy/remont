@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Компания ВАШРЕМОНТ</title>
+  <!--Стили для стрелок-->
+  <style>
+    .prev,
+    .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(57, 231, 4, 0.5);
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      font-size: 30px;
+      color: aliceblue;
+    }
+
+    .prev {
+      left: 0;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .prev.slime,
+    .next.slime {
+      display: block;
+      margin-left: 0%;
+      width: 4%;
+    }
+
+
+    .drev,
+    .pext {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(57, 231, 4, 0.5);
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      font-size: 30px;
+      color: aliceblue;
+    }
+
+    .drev {
+      left: 0;
+    }
+
+    .pext {
+      right: 0;
+    }
+
+    .drev:hover,
+    .pext:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .drev.smlide,
+    .pext.smlide {
+      display: block;
+      margin-left: 0%;
+      width: 6%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="header">
+    <h1 class="town">г.Хабаровск</h1>
+    <h1 class="repair">Компания ВАШРЕМОНТ</h1>
+
+    <div class="Page">Уникальные ремонты для вас</div>
+    <p class="Page_text">
+      Мы подберём материалы и состав работ специально под ваш бюджет,
+      при этом гарантированно обеспечим качество.</p>
+    <a class="button_page" href="#reguest">Оставить заявку</a>
+
+    <div class="main"> </div>
+    <div class="main_img">
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+
+    <div class="offer">Мы предлагаем вам:</div>
+
+
+    <div class="offer_img">
+      <p class="offer_text">Косметический ремонт</p>
+      <a class="button_offer" href="#pop">Подробнее</a>
+    </div>
+
+    <div class="hotel">
+      <p class="hotel_main">Дизайн интерьера</p>
+      <a class="button_hotel" href="#pop">Подробнее</a>
+    </div>
+
+    <div id="pop" class="hotel_img">
+      <p class="hotel_text">Комплексный ремонт</p>
+      <a class="button" href="#pop">Подробнее</a>
+
+
+      <div class="popup">
+        <div class="popup_body">
+          <div class="slider middle">
+            <div class="slides">
+              <input type="radio" name="r" id="r1" checked>
+              <input type="radio" name="r" id="r2">
+              <input type="radio" name="r" id="r3">
+              <input type="radio" name="r" id="r4">
+
+              <div class="slide s1"><img src="https://houses.ru/upload/medialibrary/7e4/kk04.jpg" alt=""></div>
+              <div class="slide "><img src="https://remont-f.ru/upload/iblock/df4/dizayn-gostinoy-komnaty.jpg" alt="">
+              </div>
+              <div class="slide"><img src="https://www.topdom.ru/gallery/flats/94/1-l.jpg" alt=""></div>
+              <div class="slide"><img src="https://www.topdom.ru/gallery/flats/94/2-xm.jpg" alt=""></div>
+
+            </div>
+
+            <div class="navigation">
+              <label for="r1" class="bar"></label>
+              <label for="r2" class="bar"></label>
+              <label for="r3" class="bar"></label>
+              <label for="r4" class="bar"></label>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="sliduk meddle">
+            <div class="slidam">
+              <input type="radio" name="r" id="l1" checked>
+              <input type="radio" name="r" id="l2">
+              <input type="radio" name="r" id="l3">
+              <input type="radio" name="r" id="l4">
+
+              <div class="snlide s1"><img src="https://houses.ru/upload/medialibrary/7e4/kk04.jpg" alt=""></div>
+              <div class="slide "><img src="https://remont-f.ru/upload/iblock/df4/dizayn-gostinoy-komnaty.jpg" alt="">
+              </div>
+              <div class="slide"><img src="https://www.topdom.ru/gallery/flats/94/1-l.jpg" alt=""></div>
+              <div class="slide"><img src="https://www.topdom.ru/gallery/flats/94/2-xm.jpg" alt=""></div>
+
+            </div>
+
+            <div class="navigateon">
+              <label for="l1" class="ber"></label>
+              <label for="l2" class="ber"></label>
+              <label for="l3" class="ber"></label>
+              <label for="l4" class="ber"></label>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="slidmer myddle">
+            <div class="slidam">
+              <input type="radio" name="r" id="n1" checked>
+              <input type="radio" name="r" id="n2">
+              <input type="radio" name="r" id="n3">
+              <input type="radio" name="r" id="n4">
+
+              <div class="smlide s1"><img src="https://houses.ru/upload/medialibrary/7e4/kk04.jpg" alt=""></div>
+              <div class="smlide "><img src="https://remont-f.ru/upload/iblock/df4/dizayn-gostinoy-komnaty.jpg" alt="">
+              </div>
+              <div class="smlide"><img src="https://www.topdom.ru/gallery/flats/94/1-l.jpg" alt=""></div>
+              <div class="smlide"><img src="https://www.topdom.ru/gallery/flats/94/2-xm.jpg" alt=""></div>
+
+              <div id="prev1" class="drev">&#8249;</div>
+              <div id="next1" class="pext">&#8250;</div>
+            </div>
+
+            <div class="navigatiom">
+              <label for="n1" class="bir"></label>
+              <label for="n2" class="bir"></label>
+              <label for="n3" class="bir"></label>
+              <label for="n4" class="bir"></label>
+
+
+
+            </div>
+
+          </div>
+
+
+          <div class="popup_close">&#10006;</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="company">
+
+    <div class="slidur muddle">
+
+      <div class="slimes">
+        <input type="radio" name="r" id="a1" checked>
+        <input type="radio" name="r" id="a2">
+        <input type="radio" name="r" id="a3">
+        <input type="radio" name="r" id="a4">
+
+        <div class="slime s1"><img src="assets/img/1.png" alt=""></div>
+        <div class="slime "><img src="assets/img/2.png" alt=""></div>
+        <div class="slime"><img src="assets/img/3.png" alt=""></div>
+        <div class="slime"><img src="assets/img/4.png" alt=""></div>
+
+        <div id="prev1" class="prev">&#8249;</div>
+        <div id="next1" class="next">&#8250;</div>
+
+
+
+
+
+      </div>
+
+      <div class="navigations">
+        <label for="a1" class="bor"></label>
+        <label for="a2" class="bor"></label>
+        <label for="a3" class="bor"></label>
+        <label for="a4" class="bor"></label>
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div id="pip" class="cap">О НАС</div>
+  <p class="cap_text">Выполнить первоклассный ремонт квартир под ключ в Хабаровске вполне реально обратившись в нашу
+    компанию. Перепланировка жилья, зонирование помещений, восстановление с нуля и многое другое можно провести в сжатые
+    сроки с максимальным сохранением качества проводимых работ вне зависимости от их сложности и объёма. Для того чтобы
+    дело было сделано хорошо, обращайтесь за помощью к профессионалам. Мы оправдываем самые смелые ожидания! Наши
+    постоянные заказчики ценят в нас честность, открытость, умение оперативно реагировать в той или иной ситуации. Риск
+    и затраты окупаются с лихвой, если правильно, не сворачивая с пути, идти к намеченной цели.
+  </p>
+
+
+
+
+
+
+
+
+
+
+
+
+  <header>
+    <div class="reguest" id="reguest">Оставить заявку</div>
+    <p class="reguest_text">Оставьте заявку и наши специалисты свяжутся с Вами в самое ближайшее время
+    </p>
+    <div class="reguest_img"></div>
+    <form action="mail.php" , method="POST">
+
+      <input class="input" type="text" name="name" placeholder="Ваше имя" required>
+      <input class="input_text" type="number" name="phone" placeholder="Ваш телефон" required>
+      <input class="input_reguest" type="email" name="email" placeholder="Ваш e-mail" required>
+      <button class="button_reguest" type="submit">Отправить заявку</button>
+    </form>
+    <div class="desing">Дизайн</div>
+    <div class="modeling">Моделирование</div>
+    <div class="sketching">Скетчинг</div>
+
+    <div class="information">
+      <div class="contact">Контактная информация</div>
+
+      <div class="phone">Звонить по номеру +7 (900)000-00-00</div>
+      <div class="mail">Писать на почту test@email.com test@email.com</div>
+      <div class="job">Время работы </div>
+      <div class="times">Пн-Вс: 8:00-23:00</div>
+      <div class="address">Наш Адрес</div>
+      <div class="djobs">Г.Хабаровск ул.д.оф.</div>
+    </div>
+  </header>
+  <script src="search.js"></script>
+  <script src="output.js"></script>
+  <script src="notpad.js"></script>
+
+
+
+</body>
+
+</html>
